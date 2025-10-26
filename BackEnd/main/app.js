@@ -18,7 +18,7 @@ app.use('/', responseRoute);
 app.use('/', saveConversationRoute);
 app.use('/', allConversationRoute);
 
-mongoose.connect("mongodb+srv://gauravrajpal:gaurav123@cluster0.1zgbogd.mongodb.net/admin?authSource=admin&replicaSet=atlas-birgew-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true", { dbName : "Code-Reviewer"});
+mongoose.connect("your mongodb url", { dbName : "Code-Reviewer"});
 
 app.listen(port, () => {
     console.log(`Server is working on port ${port}`);
